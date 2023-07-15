@@ -7,9 +7,28 @@ body{
     min-height: 100vh;
 }
 
-@media only screen and (max-width: 400px) {
+/* @media only screen and (max-width: 400px) {
   body {
     min-height: 150vh;
+  }
+} */
+
+
+body {
+  max-height: 400px; /* Set maximum height for smaller screens */
+}
+
+/* CSS for larger screens using media query */
+
+@media screen and (min-height: 401px) {
+  body {
+    height: 120vh; /* Set height to 120vh for larger screens */
+  }
+}
+
+@media screen and (min-height: 601px) {
+  body {
+    height: 150vh; /* Set height to 150vh for even larger screens */
   }
 }
 
